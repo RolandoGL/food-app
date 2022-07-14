@@ -12,12 +12,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
 </head>
 
-<body class="antialiased">
-    <div id="app">
-       <app></app>
+<body style="margin:0">
+    <div id="app" style="height: 100vh">
+        <app></app>
+        
     </div>
     <style>
+        
 
+        /* #fdfdff */
     </style>
     <script src=" {{ asset('js/app.js') }} "></script>
 </body>

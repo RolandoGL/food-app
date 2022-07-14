@@ -2,6 +2,7 @@
     <div class="container">
         <nav-bar></nav-bar>
         <div class="container-2">
+             <i class="menu-btn fa-solid fa-bars"></i>
             <span class="title">Hi <b>Vadim!</b></span>
             <div class="search-container">
                 <button class="btn">
@@ -24,18 +25,18 @@
                     placeholder="Find what you want..."
                 />
             </div>
-            <home></home>
+            <!-- <home></home> -->
+            <router-view></router-view>
         </div>
     </div>
 </template>
 
 <script>
 import NavBar from "./components/NavBar.vue";
-import Home from "./modules/clientes/components/Home.vue";
+// import Home from "./modules/clientes/components/Home.vue";
 export default {
     components: {
         NavBar,
-        Home,
     },
 };
 </script>
@@ -43,6 +44,7 @@ export default {
 <style scoped>
 .container {
     margin-top: 20px;
+    height: 100%;
 }
 .title {
     font-size: 2rem;
@@ -68,14 +70,39 @@ export default {
     background-color: transparent;
     padding: 3px;
 }
+.menu-btn {
+    border: 0;
+    border-radius: 50%;
+    background-color: transparent;
+    padding: 3px;
+    font-size: 25px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.container-2::-webkit-scrollbar {
+    display: none;
+}
+
+.container-2::-webkit-scrollbar {
+    display: initial;
+}
+
+.container-2::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 153, 204, 0);
+}
 @media (min-width: 768px) {
     .search-container {
         padding: 3px;
     }
 }
+.menu-btn {
+    display: inline;
+}
 @media (min-width: 992px) {
     .container-2 {
         width: calc(100% - 220px);
+        height: 100%;
+        overflow: auto;
     }
     .container {
         margin-top: 0;

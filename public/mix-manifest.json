@@ -1,4 +1,11 @@
 {
+    "/js/404.js": "/js/404.js",
     "/js/app.js": "/js/app.js",
+    "/js/user-home.js": "/js/user-home.js",
+    "/js/home.js": "/js/home.js",
+    "/js/product-selected.js": "/js/product-selected.js",
+    "/js/product-favorites.js": "/js/product-favorites.js",
+    "/js/product-history.js": "/js/product-history.js",
+    "/js/product-search.js": "/js/product-search.js",
     "/css/app.css": "/css/app.css"
 }
