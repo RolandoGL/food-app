@@ -111,6 +111,7 @@ export default {};
     box-sizing: border-box;
     font-size: 12px;
     text-align: center;
+    transition: all 300ms cubic-bezier(0.4, 0, 1, 1);
 }
 
 .table-cell:first-child,
